@@ -2,7 +2,7 @@ name: ExpressJs CICD PileLines
 
 on:
   push:
-    branches: ["main"]
+    branches: ["main", "master"]
   pull_request:
     branches: ["*"]
 jobs:
@@ -17,3 +17,4 @@ jobs:
           cache: "npm"
 
       - run: npm ci
+      - run: npm start
